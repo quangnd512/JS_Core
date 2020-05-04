@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+      <body onload="loadWeb()">
+      
+      <div class="container">
+        <h2>Vertical (basic) form</h2>
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="text">Ho ten</label>
+            <input type="text" onchange="show_log()" class="form-control" id="text" placeholder="" name="mane">
+          </div>
+          <div class="form-group">
+            <label for="text">Tuoi</label>
+            <input type="text" onmouseover="change_mouse()" class="form-control" id="text" placeholder="" name="age">
+          </div>
+          <div class="form-group">
+            <label for="text">Dia chi</label>
+            <input type="text" onkeydown="myOnkeydown()" class="form-control" id="text" placeholder="" name="address">
+          </div>
+          <button type="submit" class="btn btn-default" onclick="showInfo()">Dang ky</button>
+        </form>
+      </div>
+      <script src="onclick.js"></script>
+      <script src="onchange.js"></script>
+      <script src="onmouseover.js"></script>
+      <script src="onkeydown.js"></script>
+      <script src="onload.js"></script>
+      </body>
+</html>
