@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid red;
+            padding: 40px;
+            height: 20px;
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" onmouseup="clickOn(this)" onmouseout="clickOff(this)">Click me</div>
+
+    <script>
+        function clickOn(obj) {
+            obj.style.backgroundColor = "red"
+            obj.innerHTML = "Hello"
+        }
+        function clickOff(obj) {
+            obj.style.backgroundColor = "blue"
+            obj.innerHTML = "Bye"
+        }
+    </script>
+</body>
+</html>
