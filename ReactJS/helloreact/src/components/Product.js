@@ -1,23 +1,11 @@
 import React, { Component } from 'react';
 
 class Product extends Component {
-    // constructor(props){
-    //     super(props);
-    //     this.onClick = this.onClick.bind(this);
-    // }
-
-    onClick = () =>{
-        alert(this.props.children);
-    }
-
     render(){
+        const {name, price} = this.props
     return (
-      <div className='wapper'>
-            <h3>{ this.props.children }</h3>
-            <p>{ this.props.price }</p>
-            <p>
-              <a className='btn btn-primary' onClick={ this.onClick }>Mua ngay</a>
-            </p>
+      <div>
+        <h1>Info: {name}, price: {price}</h1>
       </div>
     );
   }

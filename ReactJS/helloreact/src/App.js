@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
+import Form from './components/Form';
+import Header from './components/Header';
 import Product from './components/Product';
+import LifeA from './components/LifeA';
+
 
 class App extends Component {
-    onValueProduct= () => {
-        console.log(this.refs);
-    }
-
   render(){
     return (
     <div className="App">
-        <div className='wapper'>
-            <Product price ="5000000">
-                Ten san pham
-            </Product>
-            <input ref="name"/>
-            <button onClick={ this.onValueProduct }>Click Me</button>
-        </div>
+          {/* <Product name="Item 1" price="2000$"/> */}
+          {/* <Header/> */}
+          <Form />
+          {/* <LifeA/> */}
     </div>
   );
 }
